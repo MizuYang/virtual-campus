@@ -1,0 +1,11 @@
+@import "@/assets/stylesheets/helpers/_my-variables.scss";
+
+.border-start-pink {
+  border-left: 1px solid $primary-color-dark;
+}
+.dropdown-toggle::after {
+  color: #740C00;
+}
+.bg-tip {
+  background-color: #FFFAB7;
+}
