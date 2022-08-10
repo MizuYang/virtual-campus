@@ -1,0 +1,18 @@
+@import "@/assets/stylesheets/helpers/_my-variables.scss";
+
+.border-primary-d {
+  border: 1px solid $primary-color-dark;
+}
+.border-start-pink {
+  border-left: 1px solid $primary-color-dark;
+}
+//* bs Dropdown 下箭頭為元素樣式
+.dropdown-toggle::after {
+  color: #740C00;
+}
+.bg-tip {
+  background-color: #FFFAB7;
+}
+.arrow-end::after {
+  content: ">";
+}
