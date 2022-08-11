@@ -15,7 +15,7 @@
   <!-- 索引管理 -->
   <template v-if="examTableCurrentBlock === 'indexManage'">
     <FnBtnListComeBack></FnBtnListComeBack>
-    索引管理
+    <IndexManage></IndexManage>
   </template>
 
   <!-- 歷程 -->
@@ -32,8 +32,10 @@ import { mapState } from 'vuex'
 //* 表格
 import ExamTable from '@/components/examManage/ExamTable.vue'
 import FnBtnListTable from '@/components/examManage/functionBtnList/FnBtnList_Table.vue'
-// 新增考試
+//* 新增考試
 import AddExamWrap from '@/components/examManage/addExam/AddExam_Wrap.vue'
+//* 索引管理
+import IndexManage from '@/components/examManage/IndexManage.vue'
 import FnBtnListComeBack from '@/components/examManage/functionBtnList/FnBtnList_ComeBack.vue'
 //! import emitter from '@/utils/emitter.js'
 export default {
@@ -41,6 +43,7 @@ export default {
     FnBtnListTable,
     ExamTable,
     AddExamWrap,
+    IndexManage,
     FnBtnListComeBack
   },
 
