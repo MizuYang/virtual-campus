@@ -2,26 +2,27 @@
   <!-- 考試表格 -->
   <template v-if="examTableCurrentBlock === 'table'">
     <!-- 功能按鈕列表 -->
-    <FnBtnListTable></FnBtnListTable>
+    <FnListTable></FnListTable>
     <ExamTable></ExamTable>
   </template>
 
   <!-- 新增考試 -->
   <template v-if="examTableCurrentBlock === 'addExam'">
-    <FnBtnListComeBack></FnBtnListComeBack>
+    <FnListComeBack></FnListComeBack>
     <AddExamWrap></AddExamWrap>
   </template>
 
   <!-- 索引管理 -->
   <template v-if="examTableCurrentBlock === 'indexManage'">
-    <FnBtnListComeBack></FnBtnListComeBack>
+    <FnListComeBack></FnListComeBack>
     <IndexManage></IndexManage>
   </template>
 
   <!-- 歷程 -->
   <template v-if="examTableCurrentBlock === 'course'">
-    <FnBtnListComeBack></FnBtnListComeBack>
-    歷程
+    <FnListCourse></FnListCourse>
+    <FnListOrder></FnListOrder>
+    <CourseWrap></CourseWrap>
   </template>
 
   <IsLoading v-model:active="isLoading"></IsLoading>
@@ -31,20 +32,28 @@
 import { mapState } from 'vuex'
 //* 表格
 import ExamTable from '@/components/examManage/ExamTable.vue'
-import FnBtnListTable from '@/components/examManage/functionBtnList/FnBtnList_Table.vue'
 //* 新增考試
 import AddExamWrap from '@/components/examManage/addExam/AddExam_Wrap.vue'
 //* 索引管理
 import IndexManage from '@/components/examManage/IndexManage.vue'
-import FnBtnListComeBack from '@/components/examManage/functionBtnList/FnBtnList_ComeBack.vue'
+//* 歷程
+import CourseWrap from '@/components/examManage/course/Course_Wrap.vue'
+//* 選單
+import FnListCourse from '@/components/examManage/functionList/FnList_Course.vue'
+import FnListOrder from '@/components/examManage/functionList/FnList_Order.vue'
+import FnListTable from '@/components/examManage/functionList/FnList_Table.vue'
+import FnListComeBack from '@/components/examManage/functionList/FnList_ComeBack.vue'
 //! import emitter from '@/utils/emitter.js'
 export default {
   components: {
-    FnBtnListTable,
     ExamTable,
     AddExamWrap,
     IndexManage,
-    FnBtnListComeBack
+    CourseWrap,
+    FnListTable,
+    FnListCourse,
+    FnListOrder,
+    FnListComeBack
   },
 
   computed: {

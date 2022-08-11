@@ -6,7 +6,9 @@ export default createStore({
     //* 考試管理
     examTableCurrentBlock: 'table',
     //* 新增考試
-    addExamCurrentBlock: 'table'
+    addExamCurrentBlock: 'table',
+    //* 歷程
+    courseCurrentBlock: 'learnCourse'
   },
   actions: {
     // 負責觸發 mutations
@@ -20,6 +22,10 @@ export default createStore({
     //* 新增考試
     ADD_EXAM_BLOCK (store, val) { //* 切換顯示區塊
       store.addExamCurrentBlock = val
+    },
+    //* 歷程
+    COURSE_BLOCK (store, val) { //* 顯示歷程區塊
+      store.courseCurrentBlock = val
     }
 
   },
