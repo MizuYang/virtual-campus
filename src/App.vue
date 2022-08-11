@@ -1,4 +1,5 @@
 <template>
+    <!-- 頁面導覽 - 麵包屑 -->
     <PagesNav></PagesNav>
   <router-view />
 </template>
