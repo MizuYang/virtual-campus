@@ -40,7 +40,7 @@
 
     <p class="text-dark text-decoration-none border-start-pink px-2 my-auto">考試管理</p>
 
-    <button type="button" class="btn bg-tip ms-auto">
+    <button type="button" class="btn bg-tip ms-auto" @click="openTip">
       使用說明
     </button>
   </nav>
@@ -48,6 +48,11 @@
 
 <script>
 export default {
+  methods: {
+    openTip () {
+      window.open('http://ican.sce.pccu.edu.tw/ican5/Course/Dashboard.aspx?cno=971testcourse', '', 'width=1000,height=1000')
+    }
+  }
 }
 </script>
 
