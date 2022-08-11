@@ -1,0 +1,35 @@
+.container {
+  max-width: 95%;
+}
+.foldBtn {
+  font-size: 16px;
+  padding: 0 7px;
+  text-decoration: none;
+  border: 1px solid #999999;
+  color: #000;
+  &:target {
+    font-size: 20px;
+  }
+}
+section h2 {
+  background-color: #ccff99;
+}
+.table-head-border-top {
+  border-top: 3px solid #cccccc;
+}
+.table-head-bg {
+  background-color: #eeeeee;
+}
+.table-head-text {
+  color: #666666;
+}
+//! 覆蓋 BS 表格樣式
+//* 清除表格 head 下面粗線條
+.border-bottom-styleClear {
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+//* 更改表格 hover 滑入背景顏色
+.table-hover > tbody > tr:hover {
+  background-color: #ffffcc;
+  --bs-table-hover-bg: rgb(255 255 255 / 8%);
+}
