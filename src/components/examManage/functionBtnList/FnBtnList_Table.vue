@@ -1,7 +1,7 @@
 <template>
   <ul class="d-flex bg-blue-light border list-unstyled">
     <li class="border-dotted-end hover-border-bottom">
-      <a href="javascript:;" class="text-decoration-none d-inline-block px-4 pe-1 py-1" @click.prevent="$store.commit('CURRENT_BLOCK', 'addExam')">
+      <a href="javascript:;" class="text-decoration-none d-inline-block px-4 pe-1 py-1" @click.prevent="$store.commit('EXAM_MANAGE_BLOCK', 'addExam')">
         <span>新增考試</span>
       </a>
     </li>
@@ -11,7 +11,7 @@
       </a>
     </li>
     <li class="border-dotted-end hover-border-bottom">
-      <a href="javascript:;" class="text-decoration-none d-inline-block px-4 pe-1 py-1" @click.prevent="$store.commit('CURRENT_BLOCK', 'indexManage')">
+      <a href="javascript:;" class="text-decoration-none d-inline-block px-4 pe-1 py-1" @click.prevent="$store.commit('EXAM_MANAGE_BLOCK', 'indexManage')">
         <span>索引管理</span>
       </a>
     </li>
@@ -26,7 +26,7 @@
       </a>
     </li>
     <li class="border-dotted-end hover-border-bottom">
-      <a href="javascript:;" class="text-decoration-none d-inline-block px-4 pe-1 py-1" @click.prevent="$store.commit('CURRENT_BLOCK', 'course')">
+      <a href="javascript:;" class="text-decoration-none d-inline-block px-4 pe-1 py-1" @click.prevent="$store.commit('EXAM_MANAGE_BLOCK', 'course')">
         <span>歷程</span>
       </a>
     </li>
@@ -49,7 +49,7 @@ export default {
 
   methods: {
     // changeBlock (val) {
-    //   this.$store.commit('CURRENT_BLOCK', val)
+    //   this.$store.commit('EXAM_MANAGE_BLOCK', val)
     // }
   },
 

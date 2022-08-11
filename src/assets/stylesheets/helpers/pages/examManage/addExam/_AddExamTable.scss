@@ -1,0 +1,8 @@
+//! 覆蓋 BS 表格樣式
+//* 清除表格 head 下面粗線條
+.border-bottom-styleClear {
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+.table > :not(caption) > * > * {
+  padding: 0;
+}
