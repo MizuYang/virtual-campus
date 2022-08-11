@@ -2,7 +2,7 @@
 <main>
   <section class="container">
     <div class="d-flex">
-      <a class="foldBtn" href="javascript:;" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" @click="hideTable"
+      <a class="foldBtn" href="javascript:;" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" @click="hideTable" ref="toggleBtn1"
         >－</a>
       <h2 class="fs-5 my-auto ms-3 py-1 px-2">--未設定--</h2>
     </div>
@@ -100,13 +100,16 @@ export default {
 
   methods: {
     hideTable (e) {
-      //* target 是 a 標籤，先回父層再取得子層 table 的 ref
+      //* ｅ.target 是 a 標籤，先回父層再取得子層 table 的 ref
       const refId = e.target.parentNode.parentNode.children[1].getAttribute('data-refId')
+      //* 抓到 ref 節點後查看 class 是否有 d-none
       const elIsHide = this.$refs[refId].className.split(' ').includes('d-none')
       if (elIsHide) {
         this.$refs[refId].classList.remove('d-none')
+        this.$refs.toggleBtn1.textContent = '－'
       } else {
         this.$refs[refId].classList.add('d-none')
+        this.$refs.toggleBtn1.textContent = '＋'
       }
     }
   },
