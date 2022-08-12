@@ -1,9 +1,12 @@
-<template>線上作答</template>
+<template>
+  <AEAnsOnlineMenu></AEAnsOnlineMenu>
+</template>
 
 <script>
-
+import AEAnsOnlineMenu from './AddExam_AnswerOnline/AE_AnsOnline_Menu.vue'
 export default {
   components: {
+    AEAnsOnlineMenu
   },
 
   data () {
