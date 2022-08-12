@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import AEAnsOnlineMenu from './AddExam_AnswerOnline/AE_AnsOnline_Menu.vue'
+import AEAnsOnlineMenu from './menu/AE_AnsOnline_Menu.vue'
 export default {
   components: {
     AEAnsOnlineMenu
