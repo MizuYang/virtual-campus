@@ -7,7 +7,7 @@ export default createStore({
     examTableCurrentBlock: 'table',
     //* 新增考試
     addExamCurrentBlock: 'table',
-    //* 新增考試(AE) > 線上作答
+    //* 新增考試(AE) > 線上作答中的選單
     aEAnsOnlineCurrentMenu: 'examEdit',
     //* 歷程
     courseCurrentBlock: 'learnCourse'

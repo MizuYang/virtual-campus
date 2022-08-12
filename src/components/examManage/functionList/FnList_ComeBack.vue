@@ -20,7 +20,7 @@ export default {
   },
 
   computed: {
-    ...mapState(['examTableCurrentBlock', 'addExamCurrentBlock'])
+    ...mapState(['examTableCurrentBlock', 'addExamCurrentBlock', 'aEAnsOnlineCurrentMenu'])
   },
 
   data () {
@@ -37,6 +37,13 @@ export default {
       //* 若選擇線上考試 or 紙本考試，上一頁則返回 "新增考試"
       if (this.addExamCurrentBlock !== 'table') {
         mutation = 'ADD_EXAM_BLOCK'
+
+        const isAnswerOnline = this.addExamCurrentBlock === 'answerOnline'
+        const isExamEdit = this.aEAnsOnlineCurrentMenu === 'examEdit'
+        //* 假設點線上作答，且選擇 "考試編輯" 以外的項目，按上一頁則將區塊改回 "考試編輯"
+        if (isAnswerOnline && !isExamEdit) {
+          this.$store.commit('AE_EXAM_CURRENTBLOCK', 'examEdit')
+        }
       }
       this.$store.commit(mutation, 'table')
     }
