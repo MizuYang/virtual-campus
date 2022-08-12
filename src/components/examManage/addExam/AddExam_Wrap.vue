@@ -19,9 +19,9 @@
 
 <script>
 import { mapState } from 'vuex'
-import AddExamTable from '@/components/examManage/addExam/addExam-items/AddExam_Table.vue'
-import AddExamAnswerOnline from '@/components/examManage/addExam/addExam-items/AddExam_AnswerOnline.vue'
-import AddExamPaperTest from '@/components/examManage/addExam/addExam-items/AddExam_PaperTest.vue'
+import AddExamTable from '@/components/examManage/addExam/addExam-items/addExam_Table/AddExam_Table.vue'
+import AddExamAnswerOnline from '@/components/examManage/addExam/addExam-items/addExam_AnswerOnline/AddExam_AnswerOnline.vue'
+import AddExamPaperTest from '@/components/examManage/addExam/addExam-items/addExam_PaperTest/AddExam_PaperTest.vue'
 export default {
   components: {
     AddExamTable,
