@@ -4,7 +4,7 @@
 
       <!-- 考試類別 -->
       <section class="row border">
-        <h3 class="col-2 fs-5 required my-auto">考試類別</h3>
+        <h3 class="col-2 fs-5 text-center required my-auto">考試類別</h3>
         <div class="col-10 form-bg-pink py-2">
           <select>
             <option value="">平時考</option>
@@ -14,7 +14,7 @@
 
       <!-- 索引 -->
       <section class="row border">
-        <h3 class="col-2 fs-5 my-auto">索引</h3>
+        <h3 class="col-2 fs-5 text-center my-auto">索引</h3>
         <div class="col-10 form-bg-pink py-2">
           <select>
             <option value="">新增索引</option>
@@ -24,7 +24,7 @@
 
       <!-- 考試標題 -->
       <section class="row border">
-        <h3 class="col-2 fs-5 required my-auto">考試標題</h3>
+        <h3 class="col-2 fs-5 text-center required my-auto">考試標題</h3>
         <div class="col-10 form-bg-pink py-2">
           <input type="text" size="70">
         </div>
@@ -32,7 +32,7 @@
 
       <!-- 考試 說明 -->
       <section class="row border">
-        <h3 class="col-2 fs-5 my-auto">考試 說明</h3>
+        <h3 class="col-2 fs-5 text-center my-auto">考試 說明</h3>
         <div class="col-10 form-bg-pink py-2">
           <textarea name="" id="" cols="70" rows="10"></textarea>
         </div>
@@ -40,7 +40,7 @@
 
       <!-- 公開日期 -->
       <section class="row border">
-        <h3 class="col-2 fs-5 my-auto">公開日期</h3>
+        <h3 class="col-2 fs-5 text-center my-auto">公開日期</h3>
         <div class="col-10 form-bg-pink py-2">
           <DateNormal></DateNormal>
           <i class="text-gray">在公開日期未到之前，不會顯示在學生的考試列表之中，未設定表示立即公開</i>
@@ -49,7 +49,7 @@
 
       <!-- 起始日期 -->
       <section class="row border">
-        <h3 class="col-2 fs-5 required my-auto">起始日期</h3>
+        <h3 class="col-2 fs-5 text-center required my-auto">起始日期</h3>
         <div class="col-10 form-bg-pink py-2">
           <DateNormal></DateNormal>
           <i class="text-gray">當起始日期已到時，學生才能開始考試，不能再修改試卷</i>
@@ -58,7 +58,7 @@
 
       <!-- 結束日期 -->
       <section class="row border">
-        <h3 class="col-2 fs-5 required my-auto">結束日期</h3>
+        <h3 class="col-2 fs-5 text-center required my-auto">結束日期</h3>
         <div class="col-10 form-bg-pink py-2">
           <DateNormal></DateNormal>
         </div>
@@ -66,7 +66,7 @@
 
       <!-- 成績 公佈日期 -->
       <section class="row border">
-        <h3 class="col-2 fs-5 my-auto">成績 公佈日期</h3>
+        <h3 class="col-2 fs-5 text-center my-auto">成績 公佈日期</h3>
         <div class="col-10 form-bg-pink py-2">
           <DateNormal></DateNormal>
           <i class="text-gray">不填[公佈成績日期]代表成績不予公佈</i>
@@ -75,7 +75,7 @@
 
       <!-- 補考 起始日期 -->
       <section class="row border">
-        <h3 class="col-2 fs-5 my-auto">補考 起始日期</h3>
+        <h3 class="col-2 fs-5 text-center my-auto">補考 起始日期</h3>
         <div class="col-10 form-bg-pink py-2">
           <DateNormal></DateNormal>
         </div>
@@ -83,7 +83,7 @@
 
       <!-- 補考 結束日期 -->
       <section class="row border">
-        <h3 class="col-2  fs-5 my-auto">補考 結束日期</h3>
+        <h3 class="col-2 fs-5 text-center my-auto">補考 結束日期</h3>
         <div class="col-10 form-bg-pink py-2">
           <DateNormal></DateNormal>
         </div>
@@ -91,7 +91,7 @@
 
       <!-- 課程進度 -->
       <section class="row border">
-        <h3 class="col-2 fs-5 my-auto">課程進度</h3>
+        <h3 class="col-2 fs-5 text-center my-auto">課程進度</h3>
         <div class="col-10 form-bg-pink py-2">
           <select class="form-control">
             <option value="">(不設定)</option>
@@ -106,7 +106,7 @@
 
       <!-- 考試 檔案 -->
       <section class="row border">
-        <h3 class="col-2 fs-5 my-auto">考試 檔案</h3>
+        <h3 class="col-2 fs-5 text-center my-auto">考試 檔案</h3>
         <div class="col-10 form-bg-pink py-2">
           <!-- 檔案敘述 -->
           <div class="d-flex align-items-center">
@@ -123,12 +123,13 @@
           <div>
             <i class="text-gray">(上傳檔案大小請在 10MB 以下) 檔案名稱長度限制為 200 字</i>
             <br />
-            <div class="d-flex align-items-end">
+            <div class="d-flex align-items-center">
               <a href="javascript:;" class="text-red me-5">課程總使用容量</a>
               <!-- 進度條 -->
               <span class="progress-wrap">
                 <span class="progress-finish"></span>
               </span>
+              <p class="my-auto ms-3">111.56 MB/500MB</p>
             </div>
           </div>
         </div>
@@ -197,6 +198,7 @@ export default {
   height: 25px;
   display: inline-block;
   border: 1px solid #008000;
+  background-color: #fff;
 }
 //* 進度條中的顏色
 .progress-finish {
