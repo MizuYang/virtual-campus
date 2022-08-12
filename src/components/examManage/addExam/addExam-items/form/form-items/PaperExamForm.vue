@@ -1,7 +1,7 @@
 <template>
   <!-- 考試方式 (只在線上作答顯示) -->
   <section class="row border">
-    <h3 class="col-2 fs-5 my-auto">考試方式</h3>
+    <h3 class="col-2 fs-5 text-center my-auto">考試方式</h3>
     <div class="col-10 form-bg-pink">
       <!-- 成績選擇 -->
       <div class="d-flex border-bottom mb-1">
