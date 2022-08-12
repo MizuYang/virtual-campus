@@ -1,7 +1,9 @@
 <template>
-  <nav>
-    <button type="button" class="btn border px-4 py-3" :class="{'btn-secondary': aEAnsOnlineCurrentMenu!==enMenuBtn}" v-for="(menuBtn,enMenuBtn, index) in ansOnlineMenuList" :key="`menuBtn${index}`" @click="$store.commit('AE_EXAM_CURRENTBLOCK', enMenuBtn)">{{ menuBtn }}</button>
-  </nav>
+  <ul class="d-flex list-unstyled">
+    <li v-for="(menuBtn,enMenuBtn, index) in ansOnlineMenuList" :key="`menuBtn${index}`">
+      <button type="button" class="btn border px-4 py-3" :class="{'btn-secondary': aEAnsOnlineCurrentMenu!==enMenuBtn}" @click="$store.commit('AE_EXAM_CURRENTBLOCK', enMenuBtn)">{{ menuBtn }}</button>
+    </li>
+  </ul>
 </template>
 
 <script>
