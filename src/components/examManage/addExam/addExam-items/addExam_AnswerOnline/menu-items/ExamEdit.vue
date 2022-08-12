@@ -1,9 +1,12 @@
-<template>考試編輯</template>
+<template>
+  <NormalForm></NormalForm>
+</template>
 
 <script>
-
+import NormalForm from '../../form/NormalForm.vue'
 export default {
   components: {
+    NormalForm
   },
 
   data () {
