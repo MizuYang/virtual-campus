@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mb-5">
     <form>
 
       <!-- 考試類別 -->
@@ -100,6 +100,9 @@
       </section>
 
       <!-- 考試方式 //! 線上作答顯示，紙本考試不顯示-->
+      <template v-if="addExamCurrentBlock==='answerOnline'">
+        <PaperExamForm></PaperExamForm>
+      </template>
 
       <!-- 考試 檔案 -->
       <section class="row border">
@@ -145,10 +148,17 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import DateNormal from '@/components/utils/date/DateNormal.vue'
+import PaperExamForm from './form-items/PaperExamForm.vue'
 export default {
   components: {
-    DateNormal
+    DateNormal,
+    PaperExamForm
+  },
+
+  computed: {
+    ...mapState(['addExamCurrentBlock'])
   },
 
   data () {
