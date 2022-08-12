@@ -1,4 +1,6 @@
-<template>匯入試卷</template>
+<template>
+  <div class="bg-pink-light p-5"></div>
+</template>
 
 <script>
 

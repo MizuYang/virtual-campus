@@ -2,7 +2,7 @@
   <!-- 考試方式 (只在線上作答顯示) -->
   <section class="row border">
     <h3 class="col-2 fs-5 text-center my-auto">考試方式</h3>
-    <div class="col-10 form-bg-pink">
+    <div class="col-10 bg-pink-light">
       <!-- 成績選擇 -->
       <div class="d-flex border-bottom mb-1">
         <p class="bg-light fs-5 px-4 my-auto me-2">成績選擇</p>
