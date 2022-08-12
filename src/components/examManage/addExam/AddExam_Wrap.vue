@@ -11,7 +11,7 @@
   </template>
 
   <!-- 紙本考試 -->
-    <template v-if="addExamCurrentBlock === 'paperTest'">
+    <template v-if="addExamCurrentBlock === 'paperExam'">
     <AddExamPaperTest></AddExamPaperTest>
   </template>
 

@@ -7,7 +7,7 @@
           <a href="javascript:;" class="h4 text-decoration-none d-block m-0 px-5 py-3" @click.prevent="$store.commit('ADD_EXAM_BLOCK', 'answerOnline')">線上作答</a>
         </th>
         <th>
-          <a href="javascript:;" class="h4 text-decoration-none d-block m-0 px-5 py-3" @click.prevent="$store.commit('ADD_EXAM_BLOCK', 'paperTest')">紙本考試</a>
+          <a href="javascript:;" class="h4 text-decoration-none d-block m-0 px-5 py-3" @click.prevent="$store.commit('ADD_EXAM_BLOCK', 'paperExam')">紙本考試</a>
         </th>
       </tr>
     </thead>
