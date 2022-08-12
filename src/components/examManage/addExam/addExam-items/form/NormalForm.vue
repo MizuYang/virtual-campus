@@ -5,7 +5,7 @@
       <!-- 考試類別 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center required my-auto">考試類別</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <select>
             <option value="">平時考</option>
           </select>
@@ -15,7 +15,7 @@
       <!-- 索引 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center my-auto">索引</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <select>
             <option value="">新增索引</option>
           </select>
@@ -25,7 +25,7 @@
       <!-- 考試標題 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center required my-auto">考試標題</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <input type="text" size="70">
         </div>
       </section>
@@ -33,7 +33,7 @@
       <!-- 考試 說明 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center my-auto">考試 說明</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <textarea name="" id="" cols="70" rows="10"></textarea>
         </div>
       </section>
@@ -41,7 +41,7 @@
       <!-- 公開日期 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center my-auto">公開日期</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <DateNormal></DateNormal>
           <i class="text-gray">在公開日期未到之前，不會顯示在學生的考試列表之中，未設定表示立即公開</i>
         </div>
@@ -50,7 +50,7 @@
       <!-- 起始日期 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center required my-auto">起始日期</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <DateNormal></DateNormal>
           <i class="text-gray">當起始日期已到時，學生才能開始考試，不能再修改試卷</i>
         </div>
@@ -59,7 +59,7 @@
       <!-- 結束日期 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center required my-auto">結束日期</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <DateNormal></DateNormal>
         </div>
       </section>
@@ -67,7 +67,7 @@
       <!-- 成績 公佈日期 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center my-auto">成績 公佈日期</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <DateNormal></DateNormal>
           <i class="text-gray">不填[公佈成績日期]代表成績不予公佈</i>
         </div>
@@ -76,7 +76,7 @@
       <!-- 補考 起始日期 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center my-auto">補考 起始日期</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <DateNormal></DateNormal>
         </div>
       </section>
@@ -84,7 +84,7 @@
       <!-- 補考 結束日期 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center my-auto">補考 結束日期</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <DateNormal></DateNormal>
         </div>
       </section>
@@ -92,7 +92,7 @@
       <!-- 課程進度 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center my-auto">課程進度</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <select class="form-control">
             <option value="">(不設定)</option>
           </select>
@@ -107,7 +107,7 @@
       <!-- 考試 檔案 -->
       <section class="row border">
         <h3 class="col-2 fs-5 text-center my-auto">考試 檔案</h3>
-        <div class="col-10 form-bg-pink py-2">
+        <div class="col-10 bg-pink-light py-2">
           <!-- 檔案敘述 -->
           <div class="d-flex align-items-center">
             <label for="fileDescription" class="me-2">檔案敘述</label>
@@ -182,15 +182,12 @@ export default {
 .container {
   max-width: 100%;
 }
-  .form-bg-pink {
-    background-color: #FFEEEE;
-  }
-  .text-gray {
-    color: #777777;
-  }
-  .text-red {
-    color: #CC3300;
-  }
+.text-gray {
+  color: #777777;
+}
+.text-red {
+  color: #CC3300;
+}
 //* 進度條
 .progress-wrap {
   position: relative;
